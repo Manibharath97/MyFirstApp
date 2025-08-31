@@ -9,8 +9,7 @@ public class User {
 	@Autowired
 	Order order;
 
-	public User(Order order) {
-		this.order = order;
+	public User() {				//object will be created by using this constructor
 		System.out.println("Initializing User");
 	}
 }
