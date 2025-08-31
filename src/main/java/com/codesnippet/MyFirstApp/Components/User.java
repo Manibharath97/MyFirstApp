@@ -6,14 +6,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class User {
 	
-	Order order;
+	final Order order;		//create immutable object using constructor injection
 
-	public User() {				//object will be created by using this constructor
+	/*public User() {				//object will be created by using this constructor
 		System.out.println("Initializing User");
-	}
+	}*/
 	
-	@Autowired
-	public void setOrder(Order order) {
+	OnlineOrder onlineOrder;
+
+	@Autowired			//Incase of constructor injection, when 1 constructor is present - @Autowired is not mandatory
+	public User(Order order, OnlineOrder onlineOrder) {				//object will be created by using this constructor
 		this.order = order;
+		this.onlineOrder = onlineOrder;
+		System.out.println("Initializing User");
 	}
 }
