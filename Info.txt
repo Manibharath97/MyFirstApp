@@ -4,3 +4,4 @@ Code written from CodeSnippet Tutorials (Youtube)
 2. Overview of Field Dependency Injection
 3. Overview of Setter Dependency Injection
 4. Overview of Constructor Dependency Injection
+5. Overview of @Lazy annotation
