@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class OnlineOrder{
 
-	/*public OnlineOrder() {
+	public OnlineOrder() {
 		System.out.println("Init OnlineOrder");
-	}*/
+	}
 }
