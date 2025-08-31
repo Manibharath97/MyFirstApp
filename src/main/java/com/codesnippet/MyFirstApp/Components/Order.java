@@ -8,9 +8,11 @@ public class Order {
 	
 	User user;
 
-	@Autowired
-	public Order(User user) {		//object will be created by using this constructor and stores this object in spring IOC container
-		this.user = user;
+	public Order() {		//object will be created by using this constructor and stores this object in spring IOC container
 		System.out.println("Initializing Order");
+	}
+
+	public void setOrder(User user) {
+		this.user = user;
 	}
 }
